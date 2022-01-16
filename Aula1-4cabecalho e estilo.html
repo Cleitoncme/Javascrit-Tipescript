@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Aula 1/2/3/4 - HTML </title>
+<!--Para a TAG Style sempre é CSS-->
+        <style>
+
+           /* h1 { 
+            background: red;
+            }*/ 
+            /*!!! -> Para Style tomar cuidade sobre a especificidade dos estilos,
+            se houver mais de uma TAG, por exemplo H1, o ultimo terá prioridade,
+            o mesmo vale para "class", 
+            para "id", este sempre ira sobrepor uma "class" se tiverem o mesmo nome,
+            ->> por isso dar preferencia para "class" para definir os estilos!!!*/
+            h1 {
+            background: rgb(0, 225, 255);
+            }
+            p {
+            background: blue;
+            }
+            #cabecalho-um{
+            background: purple; /*Aqui o "id" está sobrepondo a força da TAG H1*/
+            }
+            .fundo-vermelho{
+            background: green;/* 'background' define o fundo de um texto */
+            }
+            .bold {
+                color: white; /* 'color' define a cor do texto */
+            }
+        </style>
+    </head>
+
+    <body> <!--Abaixo a TAG H1 está com identificador e class-->
+        <h1 id="cabecalho-um" class="fundo-vermelho borda-azul">
+            Texto da pagina 1
+        </h1> 
+        <h1 id="cabelhao-dois" class="fundo-vermelho">
+            Texto da pagina 2
+        </h1>
+        <p><b class="bold">Outro texto</b></p>
+    </body>
+</html>
