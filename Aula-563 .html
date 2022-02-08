@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas HTML</title>
+
+  <style>
+
+    body {
+      font-family: sans-serif;
+    }
+    
+    table {
+      border-collapse: collapse;
+      width: 1500px;
+    }
+      
+    table td, table th {
+      border: 1px solid #ccc;
+      padding: 5px;
+      text-align: center;
+    }
+
+    table caption {
+      caption-side: top;
+      text-align: left;
+      font-size: italic;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    tfoot td, table th {
+      background: #ddd;
+    }
+
+    tfoot td {
+      font-style: italic;
+    }
+
+    .responsi-table {
+      max-width: 100%;
+      overflow-x: auto;
+      overflow-y: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <p>Lorem ipsum dolor  sit.</p>
+  
+  <div class="responsi-table">
+    <table>
+      <caption>Cabeçalho da tabela</caption>
+      <thead>      
+        <tr>
+          <th>Titulo 1</th>
+          <th>Titulo 2</th>
+          <th>Titulo 3</th>
+        </tr>    
+      </thead>
+
+      <tbody>      
+        <tr>
+          <td>Linha 1</td>
+          <td>Linha 1</td>
+          <td>Linha 1</td>
+        </tr>    
+      </tbody>
+
+      <tbody>      
+        <tr>
+          <td>Linha 2</td>
+          <td>Linha 2</td>
+          <td>Linha 2</td>
+        </tr>    
+      </tbody>
+
+      <tbody>      
+        <tr>
+          <td>Linha 3</td>
+          <td>Linha 3</td>
+          <td>Linha 3</td>
+        </tr>    
+      </tbody>
+
+      <tbody>      
+        <tr>
+          <td>Linha 4</td>
+          <td>Linha 4</td>
+          <td>Linha 4</td>
+        </tr>    
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="2" rowspan="2"></td>
+          <td rowspan=" ">Total</td>
+        </tr>
+        <tr>
+          <td>R$555</td>
+        </tr>
+      </tfoot>
+
+    </table>
+  </div>  
+</body>
+</html>
