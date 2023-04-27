@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.menu {
+    background-color: yellow;
+    font-size: 32px;
+    font-family: Tahoma;
+    text-align: start;
+    padding: 5px 0px 0px 20px;
+}
+
+.login {
+    background-color: yellow;
+ /* falta concluir */
+}
+
+.flex-container {
+    display: flex;
+    /* flex-direction: row; & justify-content: flex-start; &  align-items: stretch; 
+    são padrões apos utilizar o display: flex;*/
+    flex-direction: row; /* Se for ROW, o eixo principal(MAIN AXIS) é horizontal, se for COLLUN o eixo principal(MAIN AXIS) é o vertical */
+    justify-content: center; /* Aqui trabalha o alinhamento do MAIN AXIS (Principal) */
+    align-items: center; /* Aqui trabalha o alinhamento do CROSS AXIS (Perpendicular) */
+    background: yellow;
+    height: 100px;
+}
+
+.flex-item {
+    width: 100%;
+    background: red;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Tahoma';
+    font-size: 32;
+
+}
