@@ -10,6 +10,7 @@
     background-size: cover;
     background-position: center center; */
     background: var(--color-white);
+    color: var(--primary-color);
 }
 
 .main-content {
